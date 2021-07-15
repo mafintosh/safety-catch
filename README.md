@@ -11,7 +11,7 @@ Triggers an unhandled error in the next tick, when you pass it an SyntaxError, T
 ## Usage
 
 ``` js
-const safetyCatch = require('./')
+const safetyCatch = require('safety-catch')
 
 try {
   foo.bar()

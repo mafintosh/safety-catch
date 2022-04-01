@@ -1,6 +1,7 @@
 module.exports = safetyCatch
 
 function isActuallyUncaught (err) {
+  if (!err) return false
   return err instanceof TypeError ||
     err instanceof SyntaxError ||
     err instanceof ReferenceError ||

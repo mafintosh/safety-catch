@@ -10,7 +10,7 @@ Triggers an unhandled error in the next tick, when you pass it an SyntaxError, T
 
 ## Usage
 
-``` js
+```js
 const safetyCatch = require('safety-catch')
 
 try {

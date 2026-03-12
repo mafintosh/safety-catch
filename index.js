@@ -8,7 +8,8 @@ function isActuallyUncaught (err) {
     err instanceof EvalError ||
     err instanceof RangeError ||
     err instanceof URIError ||
-    err.code === 'ERR_ASSERTION'
+    err.code === 'ERR_ASSERTION' ||
+    err.name === 'AssertionError'
 }
 
 function throwErrorNT (err) {
